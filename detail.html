@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+     <!-- Tailwand block Link -->
+
+ <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+ <!-- Bootstrap CSS Link -->
+
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+  <!-- Bootstrap JS Link -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+  <!-- Google font link -->
+
+  <link href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+
+
+    <nav class="navbar navbar-expand-lg sticky-top" aria-label="Offcanvas navbar large" style="background-color: #89B9AD; border: solid 4px white;">
+        <div class="container-fluid" style="margin-left: 100px;">
+            <img src="images/logo1.png"  height="60px" width="50px"  >
+          <a class="navbar-brand " style="font-family: Protest Guerrilla; font-size: 30px; margin-left: 10px;" href="index.html">gzFashion</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end text-bg-white" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbar2Label"></h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body" style="font-family: Protest Strike, sans-serif;">
+              <ul class="navbar-nav justify-content-center flex-grow-1 pe-3" style="margin-left: 30px;">
+                <li class="nav-item" style="margin-left: 20px;">
+                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+
+                <li class="nav-item" style="margin-left: 20px;">
+                  <a class="nav-link active" href="#">Shopping</a>
+                </li>
+ 
+
+                  <li class="nav-item dropdown" style="margin-left: 20px;">
+                    <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Categories
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Apparel</a></li>
+                      <li><a class="dropdown-item" href="#">Accessories</a></li>
+                      <li><a class="dropdown-item" href="#">Footwear</a></li>
+                      <li><a class="dropdown-item" href="#">Sporting Goods</a></li>
+
+                       
+                    </ul>
+                  </li>
+
+                  <li class="nav-item" style="margin-left: 20px;">
+                    <a class="nav-link active" href="contact.html">Contact Us</a>
+                  </li>
+
+         
+              </ul>
+              <form class="d-flex mt-3 mt-lg-0" style="margin-right: 70px;" role="search">
+                  
+                <div id="searchBox" style="display: none;">
+                  <!-- Your search box content goes here -->
+                  <input type="text" style="border-radius: 7px; background-color: rgb(223, 223, 223);" placeholder="Search...">
+                  <button onclick="performSearch()">Search</button>
+              </div>
+                     
+                <a class="icon-link"  href="#" onclick="toggleSearchBox()">
+                    <svg xmlns="http://www.w3.org/2000/svg" style="fill: rgb(0, 0, 0);  margin: 15px;  " class="bi bi-search " viewBox="0 0 16 16">
+                      <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                    </svg>
+                    
+                  </a>
+
+                  
+                  
+                  <a class="icon-link"  href="login.html">
+                    <svg xmlns="http://www.w3.org/2000/svg"    style="fill: rgb(0, 0, 0); margin: 15px" class="bi bi-person-circle" viewBox="0 0 16 16">
+                      <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                      <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+                    </svg>
+                   
+                  </a>
+                  
+                  <a class="icon-link" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg"   class="bi bi-cart" viewBox="0 0 16 16" style="fill: rgb(0, 0, 0); margin: 15px">
+                      <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                    </svg>
+                   
+                  </a>
+                  
+                  
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+
+<!-- ---------------------------------------------------------------------------- -->
+
+
+
+    <div class="container">
+        <div class="title">PRODUCT DETAIL</div>
+        <div class="detail">
+            <div class="image">
+                <img src="">
+            </div>
+            <div class="content">
+                <h1 class="name"></h1>
+                <div class="price"></div>
+                <div class="buttons">
+                    <button>Check Out</button>
+                    <button>Add To Cart 
+                        <span>
+                            <svg class="" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 20">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 15a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm0 0h8m-8 0-1-4m9 4a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-9-4h10l2-7H3m2 7L3 4m0 0-.792-3H1"/>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+                <div class="description"></div>
+            </div>
+        </div>
+
+        <div class="title">Similar product</div>
+        <div class="listProduct"></div>
+    </div>
+
+    
+
+    <script>
+        let products = null;
+        // get datas from file json
+        fetch('products.json')
+            .then(response => response.json())
+            .then(data => {
+                products = data;
+                showDetail();
+        })
+
+        function showDetail(){
+    // remove datas default from HTML
+        let detail = document.querySelector('.detail');
+        let listProduct = document.querySelector('.listProduct');
+        let productId =  new URLSearchParams(window.location.search).get('id');
+        let thisProduct = products.filter(value => value.id == productId)[0];
+        //if there is no product with id = productId => return to home page
+        if(!thisProduct){
+            window.location.href = "/";
+        }
+
+        detail.querySelector('.image img').src = thisProduct.image;
+        detail.querySelector('.name').innerText = thisProduct.name;
+        detail.querySelector('.price').innerText = 'RS.' + thisProduct.price;
+        detail.querySelector('.description').innerText = 'RS.' + thisProduct.description;
+
+
+        (products.filter(value => value.id != productId)).forEach(product => {
+            let newProduct = document.createElement('a');
+            newProduct.href = '/detail.html?id=' + product.id;
+            newProduct.classList.add('item');
+            newProduct.innerHTML = 
+            `<img src="${product.image}" alt="">
+            <h2>${product.name}</h2>
+            <div class="price">${product.price}</div>`;
+            listProduct.appendChild(newProduct);
+        });
+    }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "name":" Tshirts",
+        "price": 500 ,
+        "image": "images/image20.png",
+        "description": "Elevate your style with our Cotton Black T-Shirt, crafted for comfort and versatility. The premium cotton fabric ensures a luxurious feel, making it the perfect essential for any occasion."
+    },
+    {
+        "id": 2,
+        "name":" ",
+        "price": ,
+        "image": "images/image20.png",
+        "description": "Introducing our Designer Purse - a chic blend of elegance and functionality. Elevate your style with this exquisite accessory crafted for both fashion and practicality."
+    },
+    {
+        "id": 3,
+        "name":"  ",
+        "price": 3999,
+        "image": " ",
+        "description": " Step into urban style with our Supreme Shoes - a fusion of streetwear and comfort. Elevate your footwear game with these trendsetting kicks, designed for the fashion-forward."
+    },
+    {
+        "id": 4,
+        "name":" ",
+        "price": ,
+        "image": " ",
+        "description": "Experience timeless style with our Cotton Red T-Shirt. Crafted for comfort and flair, this vibrant tee adds a pop of color to your wardrobe essentials. Elevate your casual look with the softness of cotton and a touch of bold sophistication"
+    },
+    {
+        "id": 5,
+        "name":" ",
+        "price":  ,
+        "image": " ",
+        "description": "Experience laid-back style with our Cotton Blue T-Shirt. Crafted for comfort and versatility, this tee features a cool blue hue that effortlessly complements any casual look. Elevate your wardrobe with the softness of cotton and a touch of easygoing sophistication."
+    }
+]
